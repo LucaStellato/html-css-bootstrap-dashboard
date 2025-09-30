@@ -1,3 +1,6 @@
 img{
    width: 50px;
 }
+.button{
+    white-space: nowrap;
+}
