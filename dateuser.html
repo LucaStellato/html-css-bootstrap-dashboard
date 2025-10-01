@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/duck.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" role="button">
+                                Anagrafica Utenti
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Storico Prestiti</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--/Navbar-->
+    </header>
+    <!--Main-->
+    <main>
+
+        <div class="container">
+            <div class="row ms-2 mt-5">
+
+
+                <div class="col-12 col-lg-9">
+                    <span class="fs-3 d-flex justify-content-between">Anagrafica utente
+                        <a class="btn btn-primary" href="./newbook.html" role="button">Aggiungi Utente</a>
+                    </span>
+                    <!--Table-->
+                    <table class="table table-striped mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">
+                                        Data Prestito
+                                    </div>
+                                </th>
+                                <th scope="col">Cognome</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Guendalina</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Colombo </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lorna</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Genovese</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Artemio</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">18/10/2023</div>
+                                </td>
+                                <td>Napolitani</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Luigi</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Bellucci</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Arcangelo</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Lucchese</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Vittorio</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Folliero</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Augusto</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">21/09/2023</div>
+                                </td>
+                                <td>Ferrari</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Barbara</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Bianchi</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nicla</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Rizzo</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Simona</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Ferri</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rina</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>De Luca</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Timoteo S</td>
+                                <td>
+                                    <div class="d-none d-md-table-cell d-lg-table-cell text-nowrap">-</div>
+                                </td>
+                                <td>Siciliani</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-sm d-flex flex-nowrap me-1"><i
+                                                class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-nowrap btn-sm"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--/Table-->
+
+                </div>
+                <!--Column for card-->
+                <div class="col-12 col-lg-3">
+                    <!--Card Todo-->
+                    <div class="card">
+                        <div class="card-header">
+                            Todo
+                        </div>
+
+                        <div class="card ms-3 m-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            Chiamare segreteria
+                                        </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            Mandare avvisi prestiti scaduti
+                                        </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            Ordinare nuovi libri
+                                        </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/Card Todo-->
+
+
+                    <!--Card F.A.Q-->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            F.A.Q
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Come aggiungere un nuovo libro?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            first item’s accordion body.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Come posso accedere all' anagrafica utenti?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            second item’s accordion body. Let’s imagine this being filled with some
+                                            actual content.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            third item’s accordion body. Nothing more exciting happening here in terms
+                                            of content, but just filling up the space to make it look, at least at first
+                                            glance, a bit more representative of how this would look in a real-world
+                                            application.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                    <!--/Card F.A.Q-->
+                </div>
+                <!--/Column for card-->
+            </div>
+        </div>
+
+
+
+    </main>
+    <!--/Main-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
